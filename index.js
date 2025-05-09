@@ -1,4 +1,5 @@
 const express = require('express');
+//import express from 'express';
 const app = express();
 
 app.use(express.json()); // щоб читати JSON з тіла POST
@@ -21,3 +22,4 @@ app.get('/', (req, res) => {
 });
 
 module.exports = app; // Для Vercel
+//export default app;
